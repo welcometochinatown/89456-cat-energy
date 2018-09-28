@@ -9,7 +9,7 @@
     <header class="page-header">
 
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/191x39" width="191px" height="39px" alt="Логотип 'Cat Energy' с текстом">
+        <img class="page-header__logo-image" src="http://placehold.it/191x39" width="191" height="39" alt="Логотип 'Cat Energy' с текстом">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -32,6 +32,72 @@
 
     <main class="page-main">
 
+      <section class="programm">
+        <h1 class="programm__title">Подбор программы</h1>
+        <p class="programm__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <div class="programm__wrapper">
+          <form class="programm__list" method="post" action="http://echo.htmlacademy.ru">
+            <fieldset class="programm__item cat-data">
+              <legend class="cat-data__legend visually-hidden">Данные кота</legend>
+              <p class="cat-data__text cat-data__text--name">
+                <label class="cat-data__label" for="cat-name">Имя:<sup>*</sup></label>
+                <input class="cat-data__input" id="cat-name" type="email" name="cat-name" placeholder="Барсик">
+              </p>
+              <p class="cat-data__text cat-data__text--weight">
+                <label class="cat-data__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
+                <input class="cat-data__input" id="cat-weight" type="email" name="cat-weight" placeholder="7">
+              </p>
+              <p class="cat-data__text cat-data__text--age">
+                <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
+                <input class="cat-data__input" id="cat-age" type="email" name="cat-age" placeholder="7">
+              </p>
+            </fieldset>
+            <fieldset class="programm__item goal">
+              <legend class="goal__legend visually-hidden">Программа</legend>
+              <input class="goal__input goal__input--checked" type="radio" name="radio-group" id="minus-weight" value="minus" checked>
+              <label for="minus-weight">Похудение</label>
+              <input class="goal__input" type="radio" name="radio-group" id="plus-weight" value="plus">
+              <label for="plus-weight">Набор массы</label>
+              <input class="goal__input" type="radio" name="radio-group" id="dunno-help" value="dunno">
+              <label for="dunno-help">Не знаю (Нужен ваш совет)</label>
+            </fieldset>
+            <fieldset class="programm__item user-info">
+              <legend class="user-info__legend">Контактные данные(владельца кота)</legend>
+              <p class="user-info__text user-info__text--email">
+                <label class="user-info__label visually-hidden" for="email">E-mail:<sup>*</sup></label>
+                <input class="user-info__input user-info__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
+              </p>
+              <p class="user-info__text user-info__text--tel">
+                <label class="user-info__label visually-hidden" for="phone">Телефон:<sup>*</sup></label>
+                <input class="user-info__input user-info__input--tel" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+              </p>
+            </fieldset>
+            <fieldset class="programm__item comment">
+              <legend class="comment__legend">Комментарий</legend>
+              <p class="comment__text">
+                <textarea class="comment__textarea" id="feedback" name="feedback" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <label class="comment__label visually-hidden" for="feedback">Оставьте отзыв</label>
+              </p>
+            </fieldset>
+            <fieldset class="programm__item add-some">
+              <legend class="add-some__legend">Дополнительно</legend>
+              <input class="add-some__input add-some__input--checked" type="checkbox" name="checkbox-group" id="sugarfree" value="sugarfree" checked>
+              <label for="sugarfree">Сахарозаменитель</label>
+              <input class="add-some__input" type="checkbox" name="checkbox-group" id="water" value="water">
+              <label for="water">Питьевая вода</label>
+              <input class="add-some__input" type="checkbox" name="checkbox-group" id="milk" value="milk">
+              <label for="milk">Молоко</label>
+              <input class="add-some__input" type="checkbox" name="checkbox-group" id="vitamins" value="vitamins">
+              <label for="vitamins">Витамины</label>
+            </fieldset>
+          </form>
+          <button class="programm__button button" type="button" name="button">Отправить заявку</button>
+          <small class="programm__legend">
+            <sup>*</sup> — приведённые данные ложь
+          </small>
+        </div>
+      </section>
+
       <section class="contacts">
         <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -47,7 +113,7 @@
     <footer class="page-footer">
 
       <a class="page-footer__logo" href="#">
-        <img class="page-footer__image" src="http://placehold.it/128×24" width="128px" height="24px" alt="Текстовый логотип 'Cat Energy'">
+        <img class="page-footer__image" src="http://placehold.it/128x24" width="128" height="24" alt="Текстовый логотип 'Cat Energy'">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
