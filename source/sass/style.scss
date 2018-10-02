@@ -1,3 +1,53 @@
-body {
-  background: blue;
+html {
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.13;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+
+  background-color: #ffffff;
+}
+
+.h-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  border: 0;
+}
+
+@import "base/normalize.scss";
+@import "base/fonts.scss";
+@import "blocks/page-header.scss";
+@import "blocks/index/stats.scss";
+@import "blocks/index/categories.scss";
+@import "blocks/index/advantages.scss";
+@import "blocks/index/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";

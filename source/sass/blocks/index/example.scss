@@ -1,0 +1,116 @@
+.example {
+  margin: 0;
+  padding: 0;
+
+  background-color: #f2f2f2;
+}
+
+.example__title {
+  text-align: left;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.67;
+}
+
+.example__text {
+  padding-right: 14px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.example__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.example__item {
+  position: relative;
+
+  margin-right: 32px;
+  padding: 17px 20px;
+
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+
+  border: 1px solid #cdcdcd;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--low-weight::after {
+    content: "снижение веса";
+
+    position: absolute;
+    bottom: 0;
+
+    text-align: center;
+    color: #444444;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  &--days-gone::after {
+    content: "затрачено времени";
+
+    position: absolute;
+    bottom: 0;
+
+    text-align: center;
+    color: #444444;
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+
+.example__price {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.slider__list {
+  position: relative;
+
+  list-style: none;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.slider__toggle {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  border: none;
+  outline: 0;
+  background-color: transparent;
+}
+
+.slider__scale {
+  width: 84px;
+  height: 12px;
+
+  font-size: 0;
+
+  border: solid 1px #cdcdcd;
+  border-radius: 6px;
+  background-color: #ffffff;
+}

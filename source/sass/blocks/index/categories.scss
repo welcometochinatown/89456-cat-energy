@@ -1,0 +1,46 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.categories__item {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  text-align: left;
+  background-color: #f2f2f2;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.categoies__title {
+  padding-left: 50px;
+
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.54;
+}
+
+.categories__text {
+  text-align: left;
+
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.categories__link {
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #111111;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}

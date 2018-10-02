@@ -1,0 +1,33 @@
+.stats {
+  position: relative;
+
+  text-align: center;
+  color: #ffffff;
+  background-color: green;
+  background-image: url("../img/jpg/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.stats__title {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.stats__text {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.stats__button {
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.29;
+}

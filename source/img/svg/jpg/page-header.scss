@@ -1,0 +1,34 @@
+.page-header {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+.page-header__logo {
+  margin-left: 20px;
+  margin-right: 65px;
+}
+
+.main-nav {
+  outline: 0;
+  position: relative;
+}
+
+.main-nav__toggle {
+  width: 25px;
+  height: 19px;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin-right: 19px;
+  font-size: 0;
+  background-image: url('../img/svg/icon-mobile-menu.svg');
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.main-nav__wrapper {
+  display: none;
+}
