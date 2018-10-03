@@ -42,6 +42,12 @@ body {
   border: 0;
 }
 
+.button {
+  color: #ffffff;
+
+  background-color: #68b738;
+}
+
 @import "base/normalize.scss";
 @import "base/fonts.scss";
 @import "blocks/page-header.scss";
@@ -49,5 +55,7 @@ body {
 @import "blocks/index/categories.scss";
 @import "blocks/index/advantages.scss";
 @import "blocks/index/example.scss";
+@import "blocks/catalog/catalog.scss";
+@import "blocks/catalog/extra.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
