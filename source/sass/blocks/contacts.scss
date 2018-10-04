@@ -1,0 +1,24 @@
+.contacts__wrapper {
+  display: flex;
+}
+
+.contacts__title {
+  width: 123px;
+  margin-right: 18px;
+
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.contacts__text {
+  width: 134px;
+  margin-right: 0;
+
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.43;
+}
