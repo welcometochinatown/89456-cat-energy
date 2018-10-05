@@ -51,18 +51,30 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    width: 768px;
+    width: $tablet-width;
   }
 
   .advantages__item {
     width: 250px;
     margin-right: 50px;
     padding: 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages {
-    width: 1440px;
+    width: $desktop-width;
+  }
+
+  .advantages__item {
+    margin-right: 50px;
+
+    &:nth-child(2n) {
+      margin-right: 50px;
+    }
   }
 }

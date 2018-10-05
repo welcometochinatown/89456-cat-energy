@@ -33,12 +33,20 @@ $desktop-width: 1440px; /* Поменять до 1440px */
 }
 
 @media (min-width: $tablet-width) {
+  .h-container {
+    width: $tablet-width;
+  }
+
   .container {
     margin: 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .h-container {
+    width: $desktop-width;
+  }
+
   .container {
     margin: 0 110px;
   }

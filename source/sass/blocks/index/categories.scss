@@ -48,13 +48,13 @@
 
 @media (min-width: $tablet-width) {
   .categories {
-    width: 768px;
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .categories {
-    width: 1440px;
+    width: $desktop-width;
   }
 
   .categoies__wrapper {

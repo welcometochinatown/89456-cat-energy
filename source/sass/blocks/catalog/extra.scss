@@ -74,3 +74,32 @@
   text-align: center;
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .extra {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    width: $desktop-width;
+  }
+
+  .extra__wrapper {
+    display: flex;
+  }
+
+  .extra__list {
+    width: 895px;
+    margin-right: 80px;
+  }
+
+  .item-adds__wrapper {
+    display: flex;
+  }
+
+  .extra__surprise {
+    width: 245px;
+  }
+}

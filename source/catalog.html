@@ -2,32 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="">
+    <div class="h-container">
       <header class="page-header">
 
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" width="191" height="39" alt="Логотип 'Cat Energy' с текстом">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--current">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="page-header__wrapper container">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" width="191" height="39" alt="Логотип 'Cat Energy' с текстом">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link site-list__link--current">Каталог продукции</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="form.html">Подбор программы</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
 
       </header>
 
@@ -212,13 +215,15 @@
                 </div>
                 <button class="item-block__button button" type="button" name="button">Заказать</button>
               </li>
+              <li class="catalog__item more">
+                <div class="more__list">
+                  <span class="more__icon">Иконка</span>
+                  <h3 class="more__title">Показать еще 100500 товаров</h3>
+                  <p class="more__text">На самом деле вкусов гораздо больше!</p>
+                  <a class="more__button button" href="#">Показать все</a>
+                </div>
+              </li>
             </ul>
-            <div class="catalog__more more">
-              <span class="more__icon">Иконка</span>
-              <h3 class="more__title">Показать еще 100500 товаров</h3>
-              <p class="more__text">На самом деле вкусов гораздо больше!</p>
-              <a class="more__button button" href="#">Показать все</a>
-            </div>
           </div>
         </section>
 
@@ -296,9 +301,7 @@
             <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
             <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
-          <div class="contacts__map" id="map">
-            <img class="map__bg-image" src="img/png/bg-map-mobile@1x.png" width="320" height="400" alt="Карта">
-          </div>
+          <div class="contacts__map" id="map"></div>
         </section>
 
       </main>

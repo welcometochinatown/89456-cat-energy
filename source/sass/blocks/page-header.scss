@@ -70,7 +70,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    width: 768px;
+    width: $tablet-width;
   }
 
   .page-header__wrapper {
@@ -101,6 +101,6 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1440px;
+    width: $desktop-width;
   }
 }

@@ -39,7 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    width: 768px;
+    width: $tablet-width;
   }
 
   .contacts__map {
@@ -49,7 +49,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    width: 1440px;
+    width: $desktop-width;
   }
 
   .contacts__wrapper {

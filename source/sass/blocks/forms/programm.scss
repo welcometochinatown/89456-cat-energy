@@ -127,3 +127,15 @@
   font-weight: normal;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .programm {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm {
+    width: $desktop-width;
+  }
+}

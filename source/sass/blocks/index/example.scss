@@ -124,7 +124,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    width: 768px;
+    width: $tablet-width;
   }
 
   .example__inner-titles {
@@ -145,7 +145,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    width: 1440px;
+    width: $desktop-width;
   }
 
   .example__wrapper {

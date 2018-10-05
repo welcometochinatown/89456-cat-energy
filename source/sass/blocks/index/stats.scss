@@ -41,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .stats {
-    width: 768px;
+    width: $tablet-width;
   }
 
   .stats__wrapper {
@@ -72,7 +72,7 @@
 
 @media (min-width: $desktop-width) {
   .stats {
-    width: 1440px;
+    width: $desktop-width;
   }
 
   .stats__wrapper {
