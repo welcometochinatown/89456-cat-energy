@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: 320px;
 }
 
 .categories__item {
@@ -43,4 +44,26 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .categories {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories {
+    width: 1440px;
+  }
+
+  .categoies__wrapper {
+    display: flex;
+  }
+
+  .categories__item {
+    width: 570px;
+    margin-right: 80px;
+    padding: 0;
+  }
 }

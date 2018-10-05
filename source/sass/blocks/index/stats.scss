@@ -2,13 +2,17 @@
   position: relative;
 
   width: 320px;
-  margin: 0 auto;
 
   text-align: center;
   color: #ffffff;
   background-color: green;
   background-image: url("../img/jpg/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+.stats__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .stats__title {
@@ -33,4 +37,46 @@
   color: #ffffff;
   font-size: 14px;
   line-height: 1.29;
+}
+
+@media (min-width: $tablet-width) {
+  .stats {
+    width: 768px;
+  }
+
+  .stats__wrapper {
+    margin-left: 100px;
+    width: 410px;
+  }
+
+  .stats__title {
+    font-size: 60px;
+    text-align: left;
+    color: #111111;
+  }
+
+  .stats__text {
+    font-size: 20px;
+    text-align: left;
+    color: #111111;
+  }
+
+  .stats__image {
+    order: 4;
+  }
+
+  .stats__button {
+    width: 245px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats {
+    width: 1440px;
+  }
+
+  .stats__wrapper {
+    margin-left: 83px;
+    width: 410px;
+  }
 }
