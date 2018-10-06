@@ -91,7 +91,6 @@
 .comment__textarea {
   width: 280px;
   height: 150px;
-  padding-left: 16px;
   resize: none;
 
   &::placeholder {
@@ -112,6 +111,12 @@
   }
 }
 
+.programm__bottom {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .programm__button-submit {
   text-transform: uppercase;
   font-size: 16px;
@@ -126,16 +131,97 @@
   line-height: 1.14;
   font-weight: normal;
   color: #444444;
+  text-transform: none;
 }
 
 @media (min-width: $tablet-width) {
   .programm {
     width: $tablet-width;
   }
+
+  .programm__title {
+    margin: 0 32px;
+  }
+
+  .programm__text {
+    width: 322px;
+    margin-left: 71px;
+    margin-right: 67px;
+  }
+
+  .programm__wrapper {
+    margin-left: 71px;
+    margin-right: 67px;
+  }
+
+  .programm__top {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .user-info__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .comment__textarea {
+    width: 631px;
+    height: 174px;
+  }
+
+  .add-some__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .add-some__item {
+    width: 250px;
+  }
+
+  .programm__button-submit {
+    width: 283px;
+    margin-right: 61px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .programm {
     width: $desktop-width;
+  }
+
+  .programm__title,
+  .programm__text,
+  .programm__wrapper {
+    margin: 0 110px;
+  }
+
+  .cat-data {
+    width: 570px;
+    margin-right: 80px;
+  }
+
+  .goal {
+    width: 570px;
+  }
+
+  .user-info__text {
+    width: 570px;
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .comment__textarea {
+    width: 1220px;
+  }
+
+  .programm__button-submit {
+    width: 568px;
+    margin-right: 82px;
   }
 }

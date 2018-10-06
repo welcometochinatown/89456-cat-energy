@@ -20,13 +20,12 @@ body {
   background-color: #ffffff;
 }
 
+@import "plugins/vars.scss";
+
 .h-container {
   width: 320px;
   margin: 0 auto;
 }
-
-$tablet-width: 768px;
-$desktop-width: 1440px; /* Поменять до 1440px */
 
 .container {
   margin: 0 20px;

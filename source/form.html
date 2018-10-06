@@ -10,12 +10,14 @@
     <div class="h-container">
       <header class="page-header">
 
-        <div class="page-header__wrapper container">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" width="191" height="39" alt="Логотип 'Cat Energy' с текстом">
-          </a>
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+          <nav class="main-nav container">
+            <div class="main-nav__top">
+              <a class="main-nav__logo">
+                <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" width="191" height="39" alt="Логотип 'Cat Energy' с текстом">
+              </a>
+              <button class="main-nav__toggle" type="button">Открыть меню</button>
+            </div>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
@@ -30,57 +32,59 @@
               </ul>
             </div>
           </nav>
-        </div>
+
 
       </header>
 
       <main class="page-main">
 
-        <section class="programm container">
+        <section class="programm">
           <h1 class="programm__title">Подбор программы</h1>
           <p class="programm__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-          <div class="programm__wrapper">
+          <div class="programm__wrapper container">
             <form class="programm__list" method="post" action="http://echo.htmlacademy.ru">
-              <fieldset class="programm__item cat-data">
-                <legend class="cat-data__legend visually-hidden">Данные кота</legend>
-                <div class="cat-data__wrapper">
-                  <p class="cat-data__text cat-data__text--name">
-                    <label class="cat-data__item">
-                      <span class="cat-data__label">Имя:<sup>*</sup></span>
-                      <input class="cat-data__input" type="email" name="cat-name" placeholder="Барсик">
+              <div class="programm__top">
+                <fieldset class="programm__item cat-data">
+                  <legend class="cat-data__legend visually-hidden">Данные кота</legend>
+                  <div class="cat-data__wrapper">
+                    <p class="cat-data__text cat-data__text--name">
+                      <label class="cat-data__item">
+                        <span class="cat-data__label">Имя:<sup>*</sup></span>
+                        <input class="cat-data__input" type="email" name="cat-name" placeholder="Барсик">
+                      </label>
+                    </p>
+                    <p class="cat-data__text cat-data__text--weight">
+                      <label class="cat-data__item">
+                        <span class="cat-data__label">Вес (кг):<sup>*</sup></span>
+                        <input class="cat-data__input" type="email" name="cat-weight" placeholder="7">
+                      </label>
+                    </p>
+                    <p class="cat-data__text cat-data__text--age">
+                      <label class="cat-data__item">
+                        <span class="cat-data__label">Возраст (лет):</span>
+                        <input class="cat-data__input" type="email" name="cat-age" placeholder="7">
+                      </label>
+                    </p>
+                  </div>
+                </fieldset>
+                <fieldset class="programm__item goal">
+                  <legend class="goal__legend visually-hidden">Программа</legend>
+                  <div class="goal__wrapper">
+                    <label class="goal__item">
+                      <input class="goal__input goal__input--checked" type="radio" name="radio-group" value="minus" checked>
+                      <span class="goal__label">Похудение</span>
                     </label>
-                  </p>
-                  <p class="cat-data__text cat-data__text--weight">
-                    <label class="cat-data__item">
-                      <span class="cat-data__label">Вес (кг):<sup>*</sup></span>
-                      <input class="cat-data__input" type="email" name="cat-weight" placeholder="7">
+                    <label class="goal__item">
+                      <input class="goal__input" type="radio" name="radio-group" value="plus">
+                      <span class="goal__label">Набор массы</span>
                     </label>
-                  </p>
-                  <p class="cat-data__text cat-data__text--age">
-                    <label class="cat-data__item">
-                      <span class="cat-data__label">Возраст (лет):</span>
-                      <input class="cat-data__input" type="email" name="cat-age" placeholder="7">
+                    <label class="goal__item">
+                      <input class="goal__input" type="radio" name="radio-group" value="dunno">
+                      <span class="goal__label">Не знаю (Нужен ваш совет)</span>
                     </label>
-                  </p>
-                </div>
-              </fieldset>
-              <fieldset class="programm__item goal">
-                <legend class="goal__legend visually-hidden">Программа</legend>
-                <div class="goal__wrapper">
-                  <label class="goal__item">
-                    <input class="goal__input goal__input--checked" type="radio" name="radio-group" value="minus" checked>
-                    <span class="goal__label">Похудение</span>
-                  </label>
-                  <label class="goal__item">
-                    <input class="goal__input" type="radio" name="radio-group" value="plus">
-                    <span class="goal__label">Набор массы</span>
-                  </label>
-                  <label class="goal__item">
-                    <input class="goal__input" type="radio" name="radio-group" value="dunno">
-                    <span class="goal__label">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </div>
-              </fieldset>
+                  </div>
+                </fieldset>
+              </div>
               <fieldset class="programm__item user-info">
                 <legend class="user-info__legend">Контактные данные (владельца кота)</legend>
                 <div class="user-info__wrapper">
@@ -125,11 +129,13 @@
                   </label>
                 </div>
               </fieldset>
-              <button class="programm__button-submit button" type="submit" name="submit">Отправить заявку</button>
+              <div class="programm__bottom">
+                <button class="programm__button-submit button" type="submit" name="submit">Отправить заявку</button>
+                <small class="programm__legend">
+                  <sup>*</sup> — Обязательные поля
+                </small>
+              </div>
             </form>
-            <small class="programm__legend">
-              <sup>*</sup> — Обязательные поля
-            </small>
           </div>
         </section>
 
