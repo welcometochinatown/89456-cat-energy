@@ -9,9 +9,7 @@ html {
 }
 
 body {
-  min-width: 320px;
   margin: 0;
-  padding: 0;
 
   line-height: 1.13;
   font-family: "Oswald", "Arial", sans-serif;
@@ -23,31 +21,24 @@ body {
 @import "plugins/vars.scss";
 
 .h-container {
-  width: 320px;
+  width: calc(100% - 40px);
   margin: 0 auto;
-}
-
-.container {
-  margin: 0 20px;
+  padding: 0 20px;
+  min-width: 320px;
 }
 
 @media (min-width: $tablet-width) {
   .h-container {
-    width: $tablet-width;
-  }
-
-  .container {
-    margin: 0 30px;
+    width: calc(100% - 60px);
+    padding: 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .h-container {
-    width: $desktop-width;
-  }
-
-  .container {
-    margin: 0 110px;
+    width: calc(100% - 80px);
+    padding: 0 40px;
+    max-width: $desktop-width;
   }
 }
 
@@ -76,6 +67,7 @@ body {
 @import "base/normalize.scss";
 @import "base/fonts.scss";
 @import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/index/stats.scss";
 @import "blocks/index/categories.scss";
 @import "blocks/index/advantages.scss";
@@ -85,3 +77,5 @@ body {
 @import "blocks/forms/programm.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";

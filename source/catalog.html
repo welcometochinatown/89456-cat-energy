@@ -2,45 +2,47 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="h-container">
-      <header class="page-header">
 
-          <nav class="main-nav container">
-            <div class="main-nav__top">
-              <a class="main-nav__logo">
-                <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" width="191" height="39" alt="Логотип 'Cat Energy' с текстом">
-              </a>
-              <button class="main-nav__toggle" type="button">Открыть меню</button>
-            </div>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="index.html">Главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link site-list__link--current">Каталог продукции</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="form.html">Подбор программы</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+    <header class="page-header">
 
-      </header>
+      <div class="page-header__wrapper h-container">
+        <div class="page-header__top">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" width="191" height="39" alt="Логотип 'Cat Energy' с текстом">
+          </a>
+          <button class="page-header__toggle" type="button">Открыть меню</button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+
 
       <main class="page-main">
 
         <section class="catalog">
           <h1 class="catalog__title">Каталог продукции</h1>
           <div class="catalog__wrapper container">
-            <ul class="catalog__list">
-              <li class="catalog__item item-block">
+            <div class="catalog__list">
+              <div class="catalog__item item-block">
                 <div class="item-block__wrapper">
                   <img class="item-block__image" src="img/jpg/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 Курица">
                   <div class="item-block__inner">
@@ -64,8 +66,8 @@
                   </div>
                 </div>
                 <button class="item-block__button button" type="button" name="button">Заказать</button>
-              </li>
-              <li class="catalog__item item-block">
+              </div>
+              <div class="catalog__item item-block">
                 <div class="item-block__wrapper">
                   <img class="item-block__image" src="img/jpg/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 Курица">
                   <div class="item-block__inner">
@@ -89,8 +91,8 @@
                   </div>
                 </div>
                 <button class="item-block__button button" type="button" name="button">Заказать</button>
-              </li>
-              <li class="catalog__item item-block">
+              </div>
+              <div class="catalog__item item-block">
                 <div class="item-block__wrapper">
                   <img class="item-block__image" src="img/jpg/fish-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 500 Рыба">
                   <div class="item-block__inner">
@@ -114,8 +116,8 @@
                   </div>
                 </div>
                 <button class="item-block__button button" type="button" name="button">Заказать</button>
-              </li>
-              <li class="catalog__item item-block">
+              </div>
+              <div class="catalog__item item-block">
                 <div class="item-block__wrapper">
                   <img class="item-block__image" src="img/jpg/fish-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy PRO 1000 Рыба">
                   <div class="item-block__inner">
@@ -139,8 +141,8 @@
                   </div>
                 </div>
                 <button class="item-block__button button" type="button" name="button">Заказать</button>
-              </li>
-              <li class="catalog__item item-block">
+              </div>
+              <div class="catalog__item item-block">
                 <div class="item-block__wrapper">
                   <img class="item-block__image" src="img/jpg/buckwheat-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 Гречка">
                   <div class="item-block__inner">
@@ -164,8 +166,8 @@
                   </div>
                 </div>
                 <button class="item-block__button button" type="button" name="button">Заказать</button>
-              </li>
-              <li class="catalog__item item-block">
+              </div>
+              <div class="catalog__item item-block">
                 <div class="item-block__wrapper">
                   <img class="item-block__image" src="img/jpg/buckwheat-big-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 1000 Гречка">
                   <div class="item-block__inner">
@@ -189,8 +191,8 @@
                   </div>
                 </div>
                 <button class="item-block__button button" type="button" name="button">Заказать</button>
-              </li>
-              <li class="catalog__item item-block">
+              </div>
+              <div class="catalog__item item-block">
                 <div class="item-block__wrapper">
                   <img class="item-block__image" src="img/jpg/rice-small-mobile@1x.jpg" width="140" height="144" alt="Cat Energy Slim 500 Рис">
                   <div class="item-block__inner">
@@ -214,16 +216,16 @@
                   </div>
                 </div>
                 <button class="item-block__button button" type="button" name="button">Заказать</button>
-              </li>
-              <li class="catalog__item more">
+              </div>
+              <div class="catalog__item more">
                 <div class="more__list">
                   <span class="more__icon">Иконка</span>
                   <h3 class="more__title">Показать еще 100500 товаров</h3>
                   <p class="more__text">На самом деле вкусов гораздо больше!</p>
                   <a class="more__button button" href="#">Показать все</a>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -297,7 +299,7 @@
         </section>
 
         <section class="contacts">
-          <div class="contacts__wrapper container">
+          <div class="contacts__wrapper">
             <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
             <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
@@ -307,7 +309,7 @@
       </main>
 
       <footer class="page-footer">
-        <div class="page-footer__wrapper container">
+        <div class="page-footer__wrapper h-container">
           <a class="page-footer__logo" href="#">
             <img class="page-footer__image" src="img/svg/logo-footer.svg" width="128" height="24" alt="Текстовый логотип 'Cat Energy'">
           </a>
@@ -330,6 +332,6 @@
           </div>
         </div>
       </footer>
-    </div>
+
   </body>
 </html>
