@@ -58,11 +58,15 @@
   .categoies__wrapper {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .categories__item {
-    width: 450px;
-    margin: 40px;
+    width: calc(50% - 40px);
     padding: 25px 50px;
+
+    &:first-child {
+      margin-right: 80px;
+    }
   }
 }
