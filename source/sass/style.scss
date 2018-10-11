@@ -8,6 +8,12 @@ html {
   -o-font-smoothing: antialiased;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
 
@@ -22,22 +28,20 @@ body {
 
 .h-container {
   width: calc(100% - 40px);
-  margin: 0 auto;
-  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 320px;
 }
 
 @media (min-width: $tablet-width) {
   .h-container {
     width: calc(100% - 60px);
-    padding: 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .h-container {
     width: calc(100% - 80px);
-    padding: 0 40px;
     max-width: $desktop-width;
   }
 }
