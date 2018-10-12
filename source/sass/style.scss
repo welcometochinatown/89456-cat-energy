@@ -66,6 +66,16 @@ body {
   background-color: #68b738;
   outline: 0;
   border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5eaa2f;
+  }
 }
 
 @import "base/normalize.scss";
@@ -77,6 +87,8 @@ body {
 @import "blocks/index/advantages.scss";
 @import "blocks/index/example.scss";
 @import "blocks/catalog/catalog.scss";
+@import "blocks/catalog/item-block.scss";
+@import "blocks/catalog/more.scss";
 @import "blocks/catalog/extra.scss";
 @import "blocks/forms/programm.scss";
 @import "blocks/contacts.scss";
