@@ -5,20 +5,32 @@
   padding: 20px 0;
 }
 
-.copyright__text {
-  margin: 0;
-  padding: 10px 0;
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 1;
+  color: #444444;
+  text-decoration: none;
+
+  &:hover > .copyright__logo {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.copyright__link {
+.copyright__logo {
   width: 27px;
   height: 34px;
 
-  font-size: 0;
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
