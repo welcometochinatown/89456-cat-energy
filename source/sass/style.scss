@@ -8,9 +8,14 @@ html {
   -o-font-smoothing: antialiased;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
-  padding: 0;
 
   line-height: 1.13;
   font-family: "Oswald", "Arial", sans-serif;
@@ -19,13 +24,26 @@ body {
   background-color: #ffffff;
 }
 
+@import "plugins/vars.scss";
+
 .h-container {
-  width: 320px;
-  margin: 0 auto;
+  width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
 }
 
-.container {
-  margin: 0 20px;
+@media (min-width: $tablet-width) {
+  .h-container {
+    width: calc(100% - 60px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .h-container {
+    width: calc(100% - 80px);
+    max-width: $desktop-width;
+  }
 }
 
 .visually-hidden {
@@ -48,17 +66,32 @@ body {
   background-color: #68b738;
   outline: 0;
   border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5eaa2f;
+  }
 }
 
 @import "base/normalize.scss";
 @import "base/fonts.scss";
 @import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/index/stats.scss";
 @import "blocks/index/categories.scss";
 @import "blocks/index/advantages.scss";
 @import "blocks/index/example.scss";
 @import "blocks/catalog/catalog.scss";
+@import "blocks/catalog/item-block.scss";
+@import "blocks/catalog/more.scss";
 @import "blocks/catalog/extra.scss";
 @import "blocks/forms/programm.scss";
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";

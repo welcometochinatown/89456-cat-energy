@@ -1,15 +1,22 @@
 .stats {
-  position: relative;
-
-  text-align: center;
   color: #ffffff;
-  background-color: green;
+
+  background-color: #63a73a;
   background-image: url("../img/jpg/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: top;
+}
+
+.stats__header {
+  position: relative;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .stats__title {
   margin: 0;
+  padding-top: 25px;
+  padding-bottom: 20px;
 
   font-weight: 400;
   font-size: 36px;
@@ -17,6 +24,9 @@
 }
 
 .stats__text {
+  margin-top: 5px;
+  margin-bottom: 25px;
+
   font-weight: 400;
   text-transform: uppercase;
   font-size: 14px;
@@ -24,10 +34,53 @@
 }
 
 .stats__button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
   font-size: 14px;
   line-height: 1.29;
+}
+
+@media (min-width: $tablet-width) {
+  .stats {
+    background-color: #ffffff;
+  }
+
+  .stats__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats__title {
+    width: 420px; /*перевести в %*/
+    margin-left: 90px;
+
+    font-size: 60px;
+    text-align: left;
+    color: #111111;
+  }
+
+  .stats__text {
+    margin-left: 90px;
+
+    font-size: 20px;
+    text-align: left;
+    color: #111111;
+  }
+
+  .stats__image {
+    margin-left: 90px;
+
+    order: 2;
+  }
+
+  .stats__button {
+    width: 245px;
+    margin-left: 90px;
+  }
 }

@@ -1,4 +1,7 @@
 .programm__title {
+  margin: 0 auto;
+  padding: 20px 0;
+
   text-align: left;
   font-size: 36px;
   line-height: 1.67;
@@ -6,6 +9,8 @@
 }
 
 .programm__text {
+  margin: 15px 0;
+
   text-align: left;
   text-transform: uppercase;
   font-size: 14px;
@@ -24,7 +29,6 @@
 
 .programm__item {
   padding: 0;
-  margin: 0;
 
   outline: 0;
   border: none;
@@ -33,6 +37,9 @@
 .user-info__legend,
 .comment__legend,
 .add-some__legend {
+  display: block;
+  padding: 30px 0;
+
   text-align: left;
   text-transform: none;
   font-size: 24px;
@@ -41,26 +48,39 @@
   color: #111111;
 }
 
+.cat-data {
+  padding: 10px 0;
+}
+
 .cat-data__wrapper,
 .goal__wrapper,
 .user-info__wrapper,
 .add-some__wrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .cat-data__text {
   width: 100%;
+  margin: 7px 0;
 
   &:last-child {
     margin-right: 0;
   }
 }
 
+.cat-data__label {
+  margin-right: 15px;
+}
+
 .cat-data__input,
 .user-info__input {
-  padding-left: 16px;
+  display: inline-block;
+  height: 45px;
+  padding: 13px;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  outline: 0;
 
   &::placeholder {
     text-align: left;
@@ -72,8 +92,28 @@
   }
 }
 
+.cat-data__item:hover > .cat-data__input,
+.user-info__item:hover > .user-info__input {
+  border: 1px solid rgb(205, 205, 205);
+}
+
+.cat-data__item:active > .cat-data__input,
+.user-info__item:active > .user-info__input {
+  padding: 12px;
+
+  border: solid 2px #444444;
+}
+
+.goal {
+  padding: 10px 0;
+
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+}
+
 .goal__item {
   width: 100%;
+  margin: 13px 0;
 
   &:last-child {
     margin-right: 0;
@@ -82,19 +122,27 @@
 
 .user-info__text {
   width: 100%;
+  margin: 7px 0;
 
   &:last-child {
     margin-right: 0;
   }
 }
 
+.comment__text {
+  margin: 15px 0;
+}
+
 .comment__textarea {
-  width: 280px;
+  padding: 0;
+  width: 100%;
   height: 150px;
-  padding-left: 16px;
   resize: none;
 
   &::placeholder {
+    padding-left: 10px;
+    padding-top: 10px;
+
     text-align: left;
     text-transform: uppercase;
     font-size: 16px;
@@ -106,13 +154,23 @@
 
 .add-some__item {
   width: 100%;
+  margin: 5px 0;
 
   &:last-child {
     margin-right: 0;
   }
 }
 
+.programm__bottom {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 .programm__button-submit {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+
   text-transform: uppercase;
   font-size: 16px;
   line-height: 1.25;
@@ -120,10 +178,119 @@
 }
 
 .programm__legend {
+  display: block;
+  margin: 20px 0;
+
   font-family: "Arial", sans-serif;
   text-align: center;
   font-size: 14px;
   line-height: 1.14;
   font-weight: normal;
   color: #444444;
+  text-transform: none;
+}
+
+@media (min-width: $tablet-width) {
+  .programm__list {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .programm__title {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .programm__text {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .programm__top {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .cat-data,
+  .goal {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .add-some__wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .user-info__legend,
+  .comment__legend,
+  .add-some__legend {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    font-size: 36px;
+  }
+
+  .user-info__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .comment__textarea {
+    width: 631px;
+    height: 174px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .add-some__item {
+    width: calc(50% - 40px);
+  }
+
+  .programm__bottom {
+    display: flex;
+  }
+
+  .programm__button-submit {
+    width: 283px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm__top {
+    flex-wrap: nowrap;
+  }
+
+  .user-info__text {
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .add-some__item {
+    width: calc(25% - 60px);
+  }
+
+  .comment__textarea {
+    width: 1220px;
+  }
+
+  .programm__button-submit {
+    width: 568px;
+    margin-right: 82px;
+  }
 }
