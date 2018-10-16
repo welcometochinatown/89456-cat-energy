@@ -4,11 +4,12 @@
 
 .page-header__top {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 0;
 }
 
-.page-header__logo {
+.page-header__icon {
   width: 191px;
   text-align: left;
 }
@@ -17,7 +18,6 @@
   width: 25px;
   height: 19px;
   padding: 0;
-  margin-left: auto;
 
   font-size: 0;
 
@@ -30,6 +30,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__icon-image {
+    width: 174px;
+    height: 59px;
+  }
+
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -41,9 +46,18 @@
   .page-header__toggle {
     display: none;
   }
+
+  .page-header__mobile-logo {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__icon-image {
+    width: 203px;
+    height: 60px;
+  }
+
   .page-header__wrapper {
     padding-top: 52px;
   }

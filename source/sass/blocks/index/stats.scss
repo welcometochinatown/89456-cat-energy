@@ -5,6 +5,7 @@
   background-image: url("../img/jpg/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 100%;
 }
 
 .stats__header {
@@ -48,6 +49,7 @@
 @media (min-width: $tablet-width) {
   .stats {
     background-color: #ffffff;
+    background-image: none;
   }
 
   .stats__header {
@@ -73,14 +75,29 @@
     color: #111111;
   }
 
-  .stats__image {
-    margin-left: 90px;
-
+  .stats__wrapper {
     order: 2;
+  }
+
+  .stats__image {
+    width: 709px;
+    height: 609px;
+    margin-left: 90px;
   }
 
   .stats__button {
     width: 245px;
     margin-left: 90px;
+    padding: 15px 25px;
+
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats__image {
+    width: 552px;
+    height: 499px;
   }
 }
