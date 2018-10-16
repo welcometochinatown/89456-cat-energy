@@ -7,8 +7,12 @@
   outline: 0;
 }
 
-.main-nav__wrapper {
-  /* display: none; */
+.main-nav--opened {
+  display: block;
+}
+
+.main-nav--closed {
+  display: none;
 }
 
 .site-list {
@@ -52,6 +56,14 @@
   .main-nav {
     margin: 0 -20px;
     border-top: none;
+  }
+
+  .main-nav--opened {
+    display: block;
+  }
+
+  .main-nav--closed {
+    display: block;
   }
 
   .site-list {

@@ -230,9 +230,13 @@
         </section>
 
         <section class="extra">
+<<<<<<< HEAD
+          <h2 class="extra__title">Дополнительные товары</h2>
+=======
           <div class="extra__title-wrapper h-container">
             <h2 class="extra__title">Дополнительные товары</h2>
           </div>
+>>>>>>> a0f8a16def7ff8ae378ec8c142e1bb52826e5c05
           <div class="extra__wrapper h-container">
             <ul class="extra__list">
               <li class="extra__item item-adds">
