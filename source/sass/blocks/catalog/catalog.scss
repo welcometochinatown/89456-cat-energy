@@ -21,6 +21,10 @@
 
     background-color: #f2f2f2;
     border-top: none;
+
+    &:last-child {
+      background-color: #ffffff;
+    }
   }
 }
 
