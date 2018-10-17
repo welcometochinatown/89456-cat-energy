@@ -60,16 +60,20 @@
 .categories__text {
   margin: 0;
   padding: 20px 0;
-  text-align: left;
+  padding-right: 40px;
 
+  text-align: left;
   color: #444444;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.29;
+
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
 }
 
 .categories__link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 20px 0;
 
   text-align: left;
@@ -79,12 +83,76 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+
+  &::after {
+    content: "";
+
+    width: 25px;
+    height: 11px;
+    margin-left: 10px;
+
+    background-image: url("../../img/svg/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover::after {
+    width: 33px;
+    height: 11px;
+
+    background-image: url("../../img/svg/icon-right-arrow-verylong.svg");
+  }
+
+  &:active,
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .categories__item {
+    position: relative;
+
     margin-bottom: 30px;
     padding: 55px 285px 40px 50px;
+  }
+
+  .categoies__title {
+    font-size: 36px;
+    line-height: 1.03;
+  }
+
+  .categories__text {
+    padding-right: 0;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    border-bottom: none;
+  }
+
+  .categories__icon {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+
+    width: 200px;
+    height: 200px;
+
+    &--slim::after {
+      width: 141px;
+      height: 194px;
+    }
+
+    &--pro::after {
+      width: 268px;
+      height: 113px;
+    }
+  }
+
+  .categories__link {
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
@@ -100,11 +168,30 @@
   }
 
   .categories__item {
+    position: static;
     width: calc(50% - 40px);
     padding: 25px 50px;
 
     &:first-child {
       margin-right: 80px;
+    }
+  }
+
+  .categories__icon {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+
+    &--slim::after {
+      width: 71px;
+      height: 97px;
+    }
+
+    &--pro::after {
+      width: 134px;
+      height: 57px;
     }
   }
 }
