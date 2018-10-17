@@ -6,8 +6,16 @@
   font-weight: 400;
 }
 
+.catalog__item {
+  padding-bottom: 20px;
+}
 
 @media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 1;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;

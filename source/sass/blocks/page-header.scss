@@ -1,5 +1,9 @@
 .page-header {
   position: relative;
+
+  &--catalog {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .page-header__top {
@@ -30,6 +34,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    &--catalog {
+      border-bottom: none;
+    }
+  }
+
   .page-header__icon-image {
     width: 174px;
     height: 59px;
