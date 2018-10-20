@@ -53,3 +53,21 @@
     background-color: #ebebeb;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .more__title {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .more__text {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .more__icon {
+    height: 60px;
+
+    background-image: url("../img/svg/icon-plus.svg");
+  }
+}

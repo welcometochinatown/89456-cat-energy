@@ -29,7 +29,7 @@
 .example__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -39,10 +39,11 @@
 .example__item {
   position: relative;
 
-  margin-right: 32px;
+  width: calc(50% - 15px);
   padding: 17px 20px;
 
   text-transform: uppercase;
+  text-align: center;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
@@ -57,31 +58,39 @@
     content: "снижение веса";
 
     position: absolute;
-    bottom: 0;
+    left: 25%;
+    bottom: -30%;
+
+    width: 65px;
 
     text-align: center;
     color: #444444;
     font-family: "Arial", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1;
+    background-color: #f2f2f2;
   }
 
   &--days-gone::after {
     content: "затрачено времени";
 
     position: absolute;
-    bottom: 0;
+    left: 25%;
+    bottom: -30%;
+
+    width: 65px;
 
     text-align: center;
     color: #444444;
     font-family: "Arial", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1;
+    background-color: #f2f2f2;
   }
 }
 
 .example__price {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 30px;
 
   text-align: center;
@@ -89,6 +98,13 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 35px;
 }
 
 .slider__list {
@@ -102,6 +118,10 @@
 .slider__toggles {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+
+  cursor: pointer;
 }
 
 .slider__toggle {
@@ -113,17 +133,35 @@
   border: none;
   outline: 0;
   background-color: transparent;
+
+  cursor: pointer;
+}
+
+.slider__image--thin {
+  display: none;
 }
 
 .slider__scale {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 84px;
   height: 12px;
+  padding: 2px;
 
   font-size: 0;
 
   border: solid 1px #cdcdcd;
   border-radius: 6px;
   background-color: #ffffff;
+}
+
+.slider__green {
+  display: block;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -134,19 +172,39 @@
 
   .example__title {
     padding: 30px 0;
+
     font-size: 60px;
+    line-height: 1;
   }
 
   .example__text {
     margin-top: 30px;
     margin-bottom: 35px;
     padding-right: 20px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .example__item {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .example__price {
+    font-size: 20px;
+    line-height: 1;
   }
 
   .example__inner-titles {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+  }
+
+  .slider__toggle {
+    font-size: 20px;
+    line-height: 1;
   }
 }
 

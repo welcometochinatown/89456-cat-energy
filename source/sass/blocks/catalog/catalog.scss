@@ -6,8 +6,28 @@
   font-weight: 400;
 }
 
+.catalog__item {
+  padding-bottom: 20px;
+
+  &::after {
+    content: "";
+
+    display: block;
+    height: 1px;
+    width: calc(100% + 80px);
+    margin-top: 25px;
+    margin-left: -40px;
+
+    background-color: #e6e6e6;
+  }
+}
 
 @media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 1;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
@@ -25,10 +45,18 @@
     &:last-child {
       background-color: #ffffff;
     }
+
+    &::after {
+      display: none;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 128px;
+  }
+
   .catalog__item {
     width: calc(25% - 60px);
     margin-right: 60px;
