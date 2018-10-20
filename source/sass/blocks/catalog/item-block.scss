@@ -5,7 +5,7 @@
 }
 
 .item-block__inner {
-  width: calc(50% + 20px);
+  width: 50%;
 }
 
 .item-block__title {
@@ -93,5 +93,13 @@
   .item-block__data {
     font-size: 16px;
     line-height: 1;
+  }
+
+  .item-block__image-wrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 90px;
+    padding-bottom: 30px;
   }
 }

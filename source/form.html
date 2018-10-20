@@ -41,8 +41,7 @@
       l8.1-4.9l0-5.2l3.4-2v10l-11.5,6.9L1.9,25V15.1z"/></symbol>
     </svg>
 
-
-    <header class="page-header">
+    <header class="page-header page-header--form">
 
       <div class="page-header__wrapper h-container">
         <div class="page-header__top">
@@ -56,9 +55,9 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="page-header__mobile-logo" width="101" height="18">
             <use xlink:href="#logo-mobile-top"></use>
           </svg>
-          <button class="page-header__toggle" type="button">Открыть меню</button>
+          <button class="page-header__toggle page-header__toggle--no-js" type="button">Открыть меню</button>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--no-js">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -143,7 +142,7 @@
                 </div>
               </fieldset>
               <fieldset class="programm__item comment h-container">
-                <legend class="comment__legend">Комментарий</legend>
+                <legend class="comment__legend"><span class="comment__title">Комментарий</span></legend>
                 <p class="comment__text">
                   <textarea class="comment__textarea" name="feedback" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </p>

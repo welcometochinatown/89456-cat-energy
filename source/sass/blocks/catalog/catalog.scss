@@ -8,6 +8,18 @@
 
 .catalog__item {
   padding-bottom: 20px;
+
+  &::after {
+    content: "";
+
+    display: block;
+    height: 1px;
+    width: calc(100% + 80px);
+    margin-top: 25px;
+    margin-left: -40px;
+
+    background-color: #e6e6e6;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -33,10 +45,18 @@
     &:last-child {
       background-color: #ffffff;
     }
+
+    &::after {
+      display: none;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 128px;
+  }
+
   .catalog__item {
     width: calc(25% - 60px);
     margin-right: 60px;
