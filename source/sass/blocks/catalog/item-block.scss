@@ -4,20 +4,25 @@
   flex-wrap: wrap;
 }
 
+.item-block__image-wrapper {
+  height: 144px;
+}
+
 .item-block__inner {
   width: 50%;
 }
 
 .item-block__title {
   margin: 0;
-  margin-top: 15px;
-  width: 50%;
+  margin-top: 20px;
+  width: 60%;
   padding-bottom: 10px;
 
   font-size: 16px;
   line-height: 1.25;
   font-weight: 400;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .item-block__table {

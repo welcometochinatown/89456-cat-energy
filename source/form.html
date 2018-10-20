@@ -39,6 +39,15 @@
       l11.5-1.2L25,3.1L25,12.1L25,12.1z M13.4,6.8l11.5,6.7l-4.5,2.6l-7.1-4.2l0,1.4l5.9,3.5l-0.9,0.5l-5-3l0,1.4l3.8,2.3l-0.8,0.5
       l-3-1.8l0,1.4l1.9,1.1l-1.8,1.1L2,13.6L13.4,6.8z M1.9,15.1l11.4,6.8l0,1l-7.9-4.7l0,1.4l8,4.8l0,1.1l-8-4.7l0,1.4l8,4.8l0,0
       l8.1-4.9l0-5.2l3.4-2v10l-11.5,6.9L1.9,25V15.1z"/></symbol>
+      <symbol id="sprite-icon-mail" viewBox="0 0 17 13">
+        <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/></symbol>
+      <symbol id="sprite-icon-phone" viewBox="0 0 20 20">
+        <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+        <path
+          d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+        c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+        C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+        C7.8,20,8.1,19.7,8.1,19.4z"/></symbol>
     </svg>
 
     <header class="page-header page-header--form">
@@ -130,13 +139,23 @@
                   <p class="user-info__text user-info__text--email">
                     <label class="user-info__item">
                       <span class="user-info__label">E-mail:<sup>*</sup></span>
-                      <input class="user-info__input user-info__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
+                      <span class="user-info__input-wrapper">
+                        <input class="user-info__input user-info__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="user-info__icon user-info__icon--mail" width="18" height="14">
+                          <use xlink:href="#sprite-icon-mail"></use>
+                        </svg>
+                      </span>
                     </label>
                   </p>
                   <p class="user-info__text user-info__text--tel">
                     <label class="user-info__item">
                       <span class="user-info__label">Телефон:<sup>*</sup></span>
-                      <input class="user-info__input user-info__input--tel" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+                      <span class="user-info__input-wrapper">
+                        <input class="user-info__input user-info__input--tel" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="user-info__icon user-info__icon--phone" width="21" height="21">
+                          <use xlink:href="#sprite-icon-phone"></use>
+                        </svg>
+                      </span>
                     </label>
                   </p>
                 </div>

@@ -37,6 +37,8 @@
 .user-info__legend,
 .comment__legend,
 .add-some__legend {
+  position: relative;
+
   display: block;
   padding: 30px 0;
 
@@ -46,6 +48,27 @@
   line-height: 1;
   font-weight: 400;
   color: #111111;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+
+    height: 2px;
+    width: 5000px;
+
+    background-color: #68b738;
+  }
+
+  &::before {
+    right: calc(100% + 20px);
+  }
+
+  &::after {
+    left: calc(100% + 20px);
+  }
 }
 
 .cat-data {
@@ -180,6 +203,29 @@
   }
 }
 
+.goal__label:hover::before,
+.add-some__label:hover::before {
+  border: solid 1px #bababa;
+}
+
+.goal__label:active,
+.add-some__label:active {
+  opacity: 0.3;
+}
+
+.goal__input:checked + .goal__label::before,
+.goal__label:active::before {
+  background-image: radial-gradient(#68b738 0, #68b738 6px, #ffffff 7px, #ffffff 100%);
+}
+
+.add-some__input:checked + .add-some__label::before,
+.add-some__label:active::before {
+  background-image: url("../img/svg/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 21px;
+}
+
 .user-info__item {
   display: flex;
   align-items: center;
@@ -188,6 +234,22 @@
 .user-info__label,
 .cat-data__label {
   margin-right: 15px;
+}
+
+.user-info__input {
+  padding-right: 50px;
+}
+
+.user-info__input-wrapper {
+  position: relative;
+}
+
+.user-info__icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+
+  display: block;
 }
 
 .user-info__text {
@@ -227,31 +289,6 @@
     line-height: 1.13;
     font-weight: 400;
     color: #444444;
-  }
-}
-
-.comment__legend {
-  position: relative;
-
-  &::before,
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 50%;
-
-    height: 2px;
-    width: 5000px;
-
-    background-color: #000000;
-  }
-
-  &::before {
-    right: calc(100% + 20px);
-  }
-
-  &::after {
-    left: calc(100% + 20px);
   }
 }
 
@@ -349,6 +386,11 @@
       width: 40px;
       height: 40px;
     }
+  }
+
+  .goal__input:checked + .goal__label::before,
+  .goal__label:active::before {
+    background-image: radial-gradient(#68b738 0, #68b738 9px, #ffffff 10px, #ffffff 100%);
   }
 
   .add-some__label {

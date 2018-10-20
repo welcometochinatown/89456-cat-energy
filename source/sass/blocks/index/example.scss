@@ -1,5 +1,5 @@
 .example {
-  padding-top: 15px;
+  padding-top: 20px;
   background-color: #f2f2f2;
 }
 
@@ -19,7 +19,10 @@
 }
 
 .example__text {
+  margin: 0;
+  padding-top: 3px;
   padding-right: 14px;
+  padding-bottom: 24px;
 
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -40,7 +43,7 @@
   position: relative;
 
   width: calc(50% - 15px);
-  padding: 17px 20px;
+  padding: 15px 20px;
 
   text-transform: uppercase;
   text-align: center;
@@ -90,8 +93,8 @@
 }
 
 .example__price {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 35px;
+  margin-bottom: 20px;
 
   text-align: center;
   text-transform: uppercase;
@@ -110,7 +113,8 @@
 .slider__list {
   position: relative;
 
-  padding: 0;
+  margin: 0;
+  padding: 16px 0;
 
   list-style: none;
 }
@@ -125,6 +129,8 @@
 }
 
 .slider__toggle {
+  padding: 0 18px;
+
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
@@ -146,8 +152,8 @@
   justify-content: flex-start;
   align-items: center;
   width: 84px;
-  height: 12px;
-  padding: 2px;
+  height: 14px;
+  padding: 6px;
 
   font-size: 0;
 

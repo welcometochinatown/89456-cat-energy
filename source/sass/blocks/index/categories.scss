@@ -3,7 +3,7 @@
 
   margin: 0;
   margin-bottom: 20px;
-  padding: 20px 20px 0;
+  padding: 25px 21px 0;
 
   background-color: #f2f2f2;
 }
@@ -44,7 +44,7 @@
 
     width: 35px;
     height: 49px;
-    background-image: url("../../img/svg/icon-cat-slim.svg");
+    background-image: url("../img/svg/icon-cat-slim.svg");
   }
 
   &--pro::after {
@@ -53,14 +53,13 @@
 
     width: 67px;
     height: 28px;
-    background-image: url("../../img/svg/icon-cat-pro.svg");
+    background-image: url("../img/svg/icon-cat-pro.svg");
   }
 }
 
 .categories__text {
   margin: 0;
-  padding: 20px 0;
-  padding-right: 40px;
+  padding: 23px 0;
 
   text-align: left;
   color: #444444;
@@ -74,7 +73,7 @@
 .categories__link {
   display: flex;
   align-items: center;
-  padding: 20px 0;
+  padding: 19px 0;
 
   text-align: left;
   text-decoration: none;
