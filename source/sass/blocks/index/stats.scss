@@ -68,11 +68,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 0;
   }
 
   .stats__title {
-    width: 420px; /*перевести в %*/
-    margin-left: 90px;
+    width: 420px;
+    margin-left: 87px;
 
     font-size: 60px;
     text-align: left;
@@ -80,7 +81,9 @@
   }
 
   .stats__text {
-    margin-left: 90px;
+    margin-top: 22px;
+    margin-bottom: 30px;
+    margin-left: 87px;
 
     font-size: 20px;
     text-align: left;
@@ -94,14 +97,15 @@
   .stats__image {
     width: 709px;
     height: 609px;
-    margin-top: -60px;
+    margin-top: -79px;
   }
 
   .stats__button {
     z-index: 1;
 
     width: 245px;
-    margin-left: 90px;
+    margin-top: 18px;
+    margin-left: 88px;
     padding: 15px 25px;
 
     font-size: 20px;

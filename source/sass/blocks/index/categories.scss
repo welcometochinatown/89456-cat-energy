@@ -112,16 +112,27 @@
   .categories__item {
     position: relative;
 
-    margin-bottom: 30px;
-    padding: 55px 285px 40px 50px;
+    &--slim {
+      margin-bottom: 30px;
+      padding: 55px 285px 40px 50px;
+    }
+
+    &--pro {
+      margin-bottom: 14px;
+      padding: 55px 317px 43px 50px;
+    }
   }
 
   .categoies__title {
+    padding: 22px 0;
+
     font-size: 36px;
     line-height: 1.03;
   }
 
   .categories__text {
+    padding-top: 5px;
+    padding-bottom: 35px;
     padding-right: 0;
 
     font-size: 16px;
@@ -132,18 +143,25 @@
 
   .categories__icon {
     position: absolute;
-    top: 20%;
     right: 5%;
+    top: 24%;
 
     width: 200px;
     height: 200px;
+    margin-right: 27px;
 
     &--slim::after {
+      top: -7%;
+      left: 14%;
+
       width: 141px;
       height: 194px;
     }
 
     &--pro::after {
+      top: 21%;
+      left: -17%;
+
       width: 268px;
       height: 113px;
     }

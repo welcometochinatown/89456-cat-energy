@@ -45,10 +45,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    margin-top: 66px;
+  }
+
   .contacts__wrapper {
     justify-content: space-between;
     align-items: center;
-    padding: 60px 70px 52px;
+    padding: 58px 71px 60px;
 
     background-color: #ffffff;
 
