@@ -90,7 +90,7 @@
     height: 11px;
     margin-left: 10px;
 
-    background-image: url("../../img/svg/icon-right-arrow-long.svg");
+    background-image: url("../img/svg/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -99,7 +99,7 @@
     width: 33px;
     height: 11px;
 
-    background-image: url("../../img/svg/icon-right-arrow-verylong.svg");
+    background-image: url("../img/svg/icon-right-arrow-verylong.svg");
   }
 
   &:active,
@@ -174,10 +174,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .categories {
-    padding-top: 35px;
-  }
-
   .categoies__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -185,21 +181,36 @@
   }
 
   .categories__item {
+    height: 372px;
     position: static;
     width: calc(50% - 40px);
-    padding: 25px 50px;
+    padding: 22px 52px;
 
     &:first-child {
       margin-right: 80px;
     }
   }
 
+  .categories__text {
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
+
+  .categories__link {
+    padding: 5px 0;
+
+    &::after {
+      margin-left: 23px;
+    }
+  }
+
   .categories__icon {
     position: relative;
+    right: 0;
 
     width: 100px;
     height: 100px;
-    margin-right: 40px;
+    margin-right: 61px;
 
     &--slim::after {
       width: 71px;

@@ -125,15 +125,37 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
+    margin-top: 14px;
     padding-bottom: 0;
   }
 
+  .advantages__title {
+    padding-bottom: 37px;
+  }
+
+  .advantages__text {
+    padding-top: 1px;
+    padding-right: 0;
+  }
+
   .advantages__item {
-    width: calc(25% - 10px);
+    width: calc(25% - 60px);
     margin: 35px 0 0;
 
-    &::after {
-      right: 65px;
+    &--fit::after {
+      right: 16px;
+    }
+
+    &--powder::after {
+      right: 0;
+    }
+
+    &--economic::after {
+      right: -3px;
+    }
+
+    &--fast::after {
+      right: -4px;
     }
   }
 }

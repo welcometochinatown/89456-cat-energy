@@ -64,6 +64,10 @@
     background-image: none;
   }
 
+  .stats__background-wrapper {
+    display: none;
+  }
+
   .stats__header {
     display: flex;
     flex-direction: column;
@@ -121,17 +125,30 @@
 
   .stats {
     position: relative;
-    padding-top: 159px;
+    padding-top: 194px;
+  }
+
+  .stats__title {
+    margin-left: 81px;
+  }
+
+  .stats__text {
+    margin-left: 81px;
+  }
+
+  .stats__button {
+    margin-top: 23px;
+    margin-left: 81px;
   }
 
   .stats__header {
-    padding-bottom: 300px;
+    padding-bottom: 269px;
   }
 
   .stats__wrapper {
     position: absolute;
-    bottom: 10%;
-    right: 20%;
+    bottom: 16.9%;
+    right: 22.7%;
     z-index: 2;
   }
 
@@ -143,5 +160,9 @@
     top: 0;
     right: 0;
     background-color: #63a73a;
+  }
+
+  .stats__background-wrapper {
+    display: block;
   }
 }

@@ -46,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-top: 66px;
+    margin-top: 74px;
   }
 
   .contacts__wrapper {
@@ -87,9 +87,14 @@
     top: 95px;
     left: 110px;
 
+    padding: 64px 76px 60px;
     width: 570px;
 
     background-color: #ffffff;
+  }
+
+  .contacts__text {
+    text-align: left;
   }
 
   .contacts__map {
