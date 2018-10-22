@@ -24,6 +24,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog__title {
+    padding-top: 28px;
+
     font-size: 60px;
     line-height: 1;
   }
@@ -37,8 +39,8 @@
   .catalog__item {
     width: calc(50% - 30px);
     padding: 40px 35px;
-    padding-top: 0;
-    margin-top: 140px;
+    margin-top: 130px;
+    margin-bottom: 4px;
 
     background-color: #f2f2f2;
     border-top: none;
@@ -55,12 +57,15 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding-top: 128px;
+    padding-top: 160px;
   }
 
   .catalog__item {
+    height: 431px;
     width: calc(25% - 60px);
     margin-right: 60px;
+    margin-top: 133px;
+    margin-bottom: 10px;
 
     &:nth-child(4n) {
       margin-right: 0;

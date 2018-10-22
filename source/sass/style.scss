@@ -44,8 +44,7 @@ body {
 @media (min-width: $desktop-width) {
   .h-container {
     width: calc(100% - 80px);
-    padding: 0 40px;
-    max-width: $desktop-width;
+    max-width: 1220px;
   }
 }
 

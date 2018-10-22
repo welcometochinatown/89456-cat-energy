@@ -112,8 +112,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .extra {
-    margin-bottom: 76px;
+  .extra__title-wrapper {
+    padding-left: 37px;
   }
 
   .extra__list {
@@ -121,8 +121,7 @@
   }
 
   .extra__item {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding: 16px 36px 12px;
 
     border-right: 1px solid #cdcdcd;
     border-left: 1px solid #cdcdcd;
@@ -131,22 +130,41 @@
   .item-adds__table {
     width: calc(100% - 340px);
     margin: 0;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 0;
   }
 
   .extra__title {
+    margin-top: 61px;
+    margin-bottom: 80px;
+
     font-size: 36px;
     line-height: 1;
   }
 
   .item-adds__title {
+    margin: 10px 0;
+
     font-size: 20px;
     line-height: 1;
   }
 
   .item-adds__data {
+    text-align: right;
     font-size: 16px;
     line-height: 1.25;
+
+    &--right {
+      width: 95px;
+    }
+  }
+
+  .item-adds__row {
+    justify-content: flex-end;
+  }
+
+  .item-adds__button {
+    margin: 15px 0;
   }
 
   .surprise {
@@ -160,8 +178,10 @@
   }
 
   .surprise__text {
+    width: 164px;
     margin: 0;
-    margin-right: 120px;
+    padding-top: 7px;
+    margin-right: 121px;
 
     text-align: left;
   }
@@ -170,6 +190,14 @@
 @media (min-width: $desktop-width) {
   .extra {
     margin-bottom: 86px;
+  }
+
+  .extra__title {
+    margin-top: 67px;
+  }
+
+  .extra__title-wrapper {
+    padding-left: 0;
   }
 
   .extra__wrapper {
@@ -187,15 +215,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 1px;
+
 
     border-right: none;
     border-left: none;
   }
 
   .item-adds__table {
-    width: calc(33% - 10px);
+    width: calc(33% - 7px);
   }
 
   .item-adds__title {
@@ -203,16 +231,31 @@
   }
 
   .item-adds__button {
-    width: calc(33% - 10px);
+    width: calc(33% - 51px);
+  }
+
+  .item-adds__row {
+    justify-content: space-between;
+  }
+
+  .item-adds__data {
+    text-align: left;
+
+    &--right {
+      width: 44px;
+    }
   }
 
   .surprise {
+    width: 245px;
     flex-direction: column;
+
     background-image: url("../img/optimized/catalog-opt/gift-photo-desktop@1x.jpg");
   }
 
   .surprise__icon {
-    margin: 65px auto;
+    margin: 0 auto;
+    margin-top: 65px;
   }
 
   .surprise__text {

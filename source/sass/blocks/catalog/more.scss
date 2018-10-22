@@ -60,19 +60,47 @@
 }
 
 @media (min-width: $tablet-width) {
+  .more {
+    border: solid 1px #cdcdcd;
+  }
+
   .more__title {
+    margin-top: 26px;
+    padding: 0 45px;
+
     font-size: 20px;
     line-height: 1;
   }
 
   .more__text {
+    margin-top: 26px;
+    margin-bottom: 85px;
+    padding: 0 40px;
+
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.13;
   }
 
   .more__icon {
     height: 60px;
+    margin: 22px auto;
 
     background-image: url("../img/svg/icon-plus.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more__icon {
+    margin: 16px auto;
+  }
+
+  .more__title {
+    margin-top: 32px;
+    padding: 0 19px;
+  }
+
+  .more__text {
+    margin-top: 27px;
+    padding: 0;
   }
 }
