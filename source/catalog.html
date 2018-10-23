@@ -46,16 +46,16 @@
 
       <div class="page-header__wrapper h-container">
         <div class="page-header__top">
-          <a class="page-header__logo">
+          <a class="page-header__logo page-header__logo--active" href="index.html">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/svg/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
               <img class="page-header__icon-image" src="img/svg/logo-mobile-top.svg" width="33" height="38" alt="Логотип 'Cat Energy' с текстом">
             </picture>
+            <svg xmlns="http://www.w3.org/2000/svg" class="page-header__mobile-logo" width="101" height="18">
+              <use xlink:href="#logo-mobile-top"></use>
+            </svg>
           </a>
-          <svg xmlns="http://www.w3.org/2000/svg" class="page-header__mobile-logo" width="101" height="18">
-            <use xlink:href="#logo-mobile-top"></use>
-          </svg>
           <button class="page-header__toggle page-header__toggle--no-js" type="button">Открыть меню</button>
         </div>
         <nav class="main-nav main-nav--no-js">
@@ -473,6 +473,8 @@
         </div>
       </footer>
 
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" src="js/map.js"></script>
   <script type="text/javascript" src="js/main-nav.js"></script>
   </body>
 </html>

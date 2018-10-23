@@ -7,11 +7,28 @@
   }
 }
 
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 69%;
+
+  &--active {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
 .page-header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 0;
+  padding: 13px 0;
 }
 
 .page-header__icon {

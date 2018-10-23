@@ -3,6 +3,8 @@
 }
 
 .extra__title {
+  position: relative;
+
   margin-top: 29px;
   margin-bottom: 33px;
 
@@ -10,6 +12,27 @@
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 58%;
+
+    height: 2px;
+    width: 5000px;
+
+    background-color: #68b738;
+  }
+
+  &::before {
+    right: calc(100% + 40px);
+  }
+
+  &::after {
+    left: calc(100% + -32px);
+  }
 }
 
 .extra__list {
@@ -140,6 +163,10 @@
 
     font-size: 36px;
     line-height: 1;
+
+    &::after {
+      left: calc(100% + -297px);
+    }
   }
 
   .item-adds__title {
@@ -194,6 +221,10 @@
 
   .extra__title {
     margin-top: 67px;
+
+    &::after {
+      left: calc(100% + -847px);
+    }
   }
 
   .extra__title-wrapper {

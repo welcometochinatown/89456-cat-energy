@@ -54,16 +54,16 @@
 
       <div class="page-header__wrapper h-container">
         <div class="page-header__top">
-          <a class="page-header__logo">
+          <a class="page-header__logo page-header__logo--active" href="index.html">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/svg/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg">
               <img class="page-header__icon-image" src="img/svg/logo-mobile-top.svg" width="33" height="38" alt="Логотип 'Cat Energy' с текстом">
             </picture>
+            <svg xmlns="http://www.w3.org/2000/svg" class="page-header__mobile-logo" width="101" height="18">
+              <use xlink:href="#logo-mobile-top"></use>
+            </svg>
           </a>
-          <svg xmlns="http://www.w3.org/2000/svg" class="page-header__mobile-logo" width="101" height="18">
-            <use xlink:href="#logo-mobile-top"></use>
-          </svg>
           <button class="page-header__toggle page-header__toggle--no-js" type="button">Открыть меню</button>
         </div>
         <nav class="main-nav main-nav--no-js">
@@ -98,19 +98,19 @@
                     <p class="cat-data__text cat-data__text--name">
                       <label class="cat-data__item">
                         <span class="cat-data__label">Имя:<sup>*</sup></span>
-                        <input class="cat-data__input" type="email" name="cat-name" placeholder="Барсик">
+                        <input class="cat-data__input" type="text" name="cat-name" placeholder="Барсик" required>
                       </label>
                     </p>
                     <p class="cat-data__text cat-data__text--weight">
                       <label class="cat-data__item">
                         <span class="cat-data__label">Вес (кг):<sup>*</sup></span>
-                        <input class="cat-data__input" type="email" name="cat-weight" placeholder="7">
+                        <input class="cat-data__input" type="text" name="cat-weight" placeholder="7" required>
                       </label>
                     </p>
                     <p class="cat-data__text cat-data__text--age">
                       <label class="cat-data__item">
                         <span class="cat-data__label">Возраст (лет):</span>
-                        <input class="cat-data__input" type="email" name="cat-age" placeholder="7">
+                        <input class="cat-data__input" type="text" name="cat-age" placeholder="7" required>
                       </label>
                     </p>
                   </div>
@@ -140,7 +140,7 @@
                     <label class="user-info__item">
                       <span class="user-info__label">E-mail:<sup>*</sup></span>
                       <span class="user-info__input-wrapper">
-                        <input class="user-info__input user-info__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
+                        <input class="user-info__input user-info__input--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                         <svg xmlns="http://www.w3.org/2000/svg" class="user-info__icon user-info__icon--mail" width="18" height="14">
                           <use xlink:href="#sprite-icon-mail"></use>
                         </svg>
@@ -151,7 +151,7 @@
                     <label class="user-info__item">
                       <span class="user-info__label">Телефон:<sup>*</sup></span>
                       <span class="user-info__input-wrapper">
-                        <input class="user-info__input user-info__input--tel" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+                        <input class="user-info__input user-info__input--tel" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
                         <svg xmlns="http://www.w3.org/2000/svg" class="user-info__icon user-info__icon--phone" width="21" height="21">
                           <use xlink:href="#sprite-icon-phone"></use>
                         </svg>
@@ -251,6 +251,8 @@
         </div>
       </footer>
 
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" src="js/map.js"></script>
   <script type="text/javascript" src="js/main-nav.js"></script>
   </body>
 </html>

@@ -71,6 +71,7 @@
 }
 
 .categories__link {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 19px 0;
@@ -82,24 +83,32 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+}
+
+.categories__arrow {
+  position: relative;
+  overflow: hidden;
+
+  width: 33px;
+  height: 11px;
+  margin-left: 10px;
 
   &::after {
     content: "";
 
-    width: 25px;
-    height: 11px;
-    margin-left: 10px;
+    position: absolute;
+    left: -8px;
 
-    background-image: url("../img/svg/icon-right-arrow-long.svg");
+    width: 33px;
+    height: 11px;
+
+    background-image: url("../img/svg/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &:hover::after {
-    width: 33px;
-    height: 11px;
-
-    background-image: url("../img/svg/icon-right-arrow-verylong.svg");
+    left: 0;
   }
 
   &:active,
