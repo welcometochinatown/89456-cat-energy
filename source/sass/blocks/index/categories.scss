@@ -83,6 +83,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
+
+  &:hover > .categories__arrow::after {
+    background-position-x: 0;
+  }
+
+  &:active,
+  &:active > .categories__arrow::after {
+    opacity: 0.3;
+  }
 }
 
 .categories__arrow {
@@ -91,29 +100,21 @@
 
   width: 33px;
   height: 11px;
-  margin-left: 10px;
+  margin-left: 23px;
 
   &::after {
     content: "";
 
     position: absolute;
-    left: -8px;
+    left: 0;
 
     width: 33px;
     height: 11px;
 
     background-image: url("../img/svg/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &:hover::after {
-    left: 0;
-  }
-
-  &:active,
-  &:active::after {
-    opacity: 0.3;
+    background-position-x: -8px;
+    transition: background-position-x 0.2s;
   }
 }
 
@@ -122,7 +123,7 @@
     position: relative;
 
     &--slim {
-      margin-bottom: 30px;
+      margin-bottom: 38px;
       padding: 55px 285px 40px 50px;
     }
 
@@ -133,7 +134,8 @@
   }
 
   .categoies__title {
-    padding: 22px 0;
+    padding-top: 18px;
+    padding-bottom: 20px;
 
     font-size: 36px;
     line-height: 1.03;
@@ -189,11 +191,18 @@
     width: 100%;
   }
 
+  .categoies__title {
+    padding-top: 21px;
+    padding-bottom: 22px;
+  }
+
   .categories__item {
-    height: 372px;
     position: static;
+
+    height: 372px;
     width: calc(50% - 40px);
-    padding: 22px 52px;
+    padding: 24px 52px;
+    margin-bottom: 28px;
 
     &:first-child {
       margin-right: 80px;

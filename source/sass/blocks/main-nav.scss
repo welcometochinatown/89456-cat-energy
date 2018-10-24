@@ -104,7 +104,9 @@
 
   .site-list__link {
     padding: 8px 0;
-    margin: 0 18px;
+    margin: 0;
+    margin-left: 16px;
+    margin-right: 20px;
 
     font-weight: 400;
     font-size: 18px;
@@ -119,7 +121,8 @@
 @media (min-width: $desktop-width) {
   .site-list__link {
     padding: 9px 0;
-    margin: 0 18px;
+    margin-left: 16px;
+    margin-right: 19px;
     font-size: 20px;
     line-height: 1.25;
 

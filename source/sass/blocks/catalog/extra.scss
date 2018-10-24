@@ -135,6 +135,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .extra {
+    margin-bottom: 76px;
+  }
+
   .extra__title-wrapper {
     padding-left: 37px;
   }

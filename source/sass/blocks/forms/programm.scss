@@ -187,6 +187,10 @@
   padding: 12px;
 
   border: solid 2px #ff8282;
+
+  & + .user-info__icon {
+    fill: #ff8282;
+  }
 }
 
 .goal {
@@ -549,7 +553,7 @@
     padding-top: 22px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 74px;
+    padding-bottom: 71px;
   }
 
   .programm__legend {
@@ -649,6 +653,12 @@
 
     &::after {
       left: calc(100% + 41px);
+    }
+  }
+
+  .user-info__legend {
+    &::after {
+      top: 52%;
     }
   }
 
