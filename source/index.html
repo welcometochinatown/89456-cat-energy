@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <div style="display: none">
+    <div class="display-none">
       <include src="build/img/sprite/sprite.svg"></include>
     </div>
 
@@ -17,7 +17,7 @@
         <div class="page-header__wrapper h-container">
           <div class="page-header__top">
             <a class="page-header__logo">
-              <picture>
+              <picture class="page-header__logo-wrapper">
                 <source media="(min-width: 1300px)" srcset="img/optimized/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/optimized/logo-tablet.svg">
                 <img class="page-header__icon-image" src="img/optimized/logo-mobile-top.svg" width="33" height="38" alt="Логотип 'Cat Energy' с текстом">
@@ -40,8 +40,9 @@
                 <a class="site-list__link site-list__link--desktop" href="form.html">Подбор программы</a>
               </li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+        </div>
+
 
       </header>
 
@@ -91,7 +92,7 @@
                 Набор массы
               </h3>
               <p class="categories__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="categories__link" href="catalog.html">Каталог pro<span class="categories__arrow"></a>
+              <a class="categories__link" href="catalog.html">Каталог pro<span class="categories__arrow"></span></a>
             </article>
           </div>
         </section>
@@ -252,8 +253,8 @@
         </div>
       </footer>
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-  <script type="text/javascript" src="js/map.js"></script>
-  <script type="text/javascript" src="js/main-nav.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main-nav.js"></script>
   </body>
 </html>
