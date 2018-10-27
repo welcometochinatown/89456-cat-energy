@@ -3,13 +3,15 @@
 }
 
 .contacts__wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding: 26px 20px 25px;
-
   &--bg-grey {
     background-color: #f2f2f2;
   }
+}
+
+.contacts__box {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 19px 25px;
 }
 
 .contacts__title {
@@ -18,7 +20,7 @@
 
   text-align: left;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
 }
@@ -38,7 +40,7 @@
   height: 362px;
 
   background-color: #f7f3ed;
-  background-image: url("../img/png/bg-map-mobile@1x.png");
+  background-image: url("../img/optimized/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -48,7 +50,6 @@
   .contacts__wrapper {
     justify-content: space-between;
     align-items: center;
-    padding: 60px 70px 52px;
 
     background-color: #ffffff;
 
@@ -57,8 +58,14 @@
     }
   }
 
+  .contacts__box {
+    padding: 63px 72px 60px;
+  }
+
   .contacts__map {
-    background-image: url("../img/png/bg-map-tablet@1x.png");
+    height: 400px;
+
+    background-image: url("../img/optimized/bg-map-tablet@1x.png");
   }
 
   .contacts__title {
@@ -75,22 +82,57 @@
     line-height: 1.25;
     text-align: right;
   }
+
+  .contacts__space {
+    display: block;
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    height: 400px;
+  }
+
   .contacts__wrapper {
     position: absolute;
-    top: 95px;
-    left: 110px;
+    top: 100%;
+    z-index: 5;
 
-    width: 570px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .contacts__inner {
+    width: calc(100% - 80px);
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts__box {
+    position: absolute;
+    top: -300px;
+
+    padding: 60px 76px 55px;
 
     background-color: #ffffff;
+  }
+
+  .contacts__text {
+    width: 167px;
+    margin-left: 90px;
+
+    text-align: left;
+  }
+
+  .contacts__space {
+    margin-top: 20px;
   }
 
   .contacts__map {
     height: 400px;
 
-    background-image: url("../img/png/bg-map-desktop@1x.png");
+    background-image: url("../img/optimized/bg-map-desktop@1x.png");
   }
 }
