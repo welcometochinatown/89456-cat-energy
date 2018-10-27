@@ -16,6 +16,9 @@ var del = require("del");
 var server = require("browser-sync").create();
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var htmlmin = require("gulp-htmlmin");
+var uglify = require("gulp-uglify");
+var pump = require("pump");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -32,7 +35,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
@@ -42,7 +45,7 @@ gulp.task("images", function() {
 });
 
 gulp.task("webp", function() {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img/webp"));
 });
@@ -53,7 +56,7 @@ gulp.task("sprite", function () {
       inLineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img/sprite"));
 });
 
 gulp.task("html", function () {
@@ -64,12 +67,27 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("minify", () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("compress", function () {
+  return gulp.src("source/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("source/**.min.js"))
+    .on("error", function(err) {
+      console.error("Error in compress task", err.toString());
+    });
+});
+
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/webp",
-    "source/img/optimized",
-    "source/img/sprite.svg",
+    "source/img/webp/**",
+    "source/img/optimized/**",
+    "source/img/sprite",
     "source/js/**"
   ], {
     base: "source"
@@ -105,7 +123,8 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
-  "html"
+  "html",
+  "minify"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
