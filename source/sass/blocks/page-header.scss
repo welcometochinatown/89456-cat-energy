@@ -7,6 +7,23 @@
   }
 }
 
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 68%;
+
+  &--active {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
 .page-header__top {
   display: flex;
   justify-content: space-between;
@@ -23,6 +40,7 @@
   width: 25px;
   height: 19px;
   padding: 0;
+  margin-right: -3px;
 
   font-size: 0;
 
@@ -58,8 +76,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
   }
 
   .page-header__toggle {
@@ -86,6 +104,6 @@
   }
 
   .page-header__wrapper {
-    padding-top: 20px;
+    padding-top: 40px;
   }
 }

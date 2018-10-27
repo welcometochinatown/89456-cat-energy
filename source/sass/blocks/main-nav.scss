@@ -103,6 +103,11 @@
   }
 
   .site-list__link {
+    padding: 8px 0;
+    margin: 0;
+    margin-left: 16px;
+    margin-right: 20px;
+
     font-weight: 400;
     font-size: 18px;
     line-height: 1.39;
@@ -115,6 +120,12 @@
 
 @media (min-width: $desktop-width) {
   .site-list__link {
+    padding: 9px 0;
+    margin-left: 16px;
+    margin-right: 19px;
+    font-size: 20px;
+    line-height: 1.25;
+
     &--desktop {
       color: #ffffff;
 
@@ -126,9 +137,9 @@
         color: rgba(255, 255, 255, 0.3);
       }
     }
-  }
 
-  .site-list__link--current {
-    border-bottom: 2px solid #ffffff;
+    &--current-desktop {
+      border-bottom: 2px solid #ffffff;
+    }
   }
 }
