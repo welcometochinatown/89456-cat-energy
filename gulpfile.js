@@ -19,6 +19,8 @@ var webp = require("gulp-webp");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
 var pump = require("pump");
+var concat = require('gulp-concat');
+var babel = require('gulp-babel');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -73,13 +75,14 @@ gulp.task("minify", () => {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("compress", function () {
-  return gulp.src("source/*.js")
-    .pipe(uglify())
-    .pipe(gulp.dest("source/**.min.js"))
-    .on("error", function(err) {
-      console.error("Error in compress task", err.toString());
-    });
+gulp.task("compress", () => {
+    return gulp.src("source/js/*.js")
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(plumber())
+        .pipe(uglify())
+        .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function () {
@@ -122,9 +125,10 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "compress",
   "sprite",
-  "html",
-  "minify"
+  "minify",
+  "html"
 ));
 
 gulp.task("start", gulp.series("build", "server"));
