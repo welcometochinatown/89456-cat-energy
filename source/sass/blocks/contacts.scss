@@ -40,7 +40,7 @@
   height: 362px;
 
   background-color: #f7f3ed;
-  background-image: url("../img/png/bg-map-mobile@1x.png");
+  background-image: url("../img/optimized/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -65,7 +65,7 @@
   .contacts__map {
     height: 400px;
 
-    background-image: url("../img/png/bg-map-tablet@1x.png");
+    background-image: url("../img/optimized/bg-map-tablet@1x.png");
   }
 
   .contacts__title {
@@ -133,6 +133,6 @@
   .contacts__map {
     height: 400px;
 
-    background-image: url("../img/png/bg-map-desktop@1x.png");
+    background-image: url("../img/optimized/bg-map-desktop@1x.png");
   }
 }
