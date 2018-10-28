@@ -422,6 +422,10 @@
     }
   }
 
+  .cat-data {
+    padding: 8px 0;
+  }
+
   .cat-data__text {
     margin-bottom: 8px;
     margin-top: 7px;
@@ -432,11 +436,11 @@
     }
 
     &--weight .cat-data__input {
-      width: calc(100% - 90px);
+      width: calc(100% - 93px);
     }
 
     &--age .cat-data__input {
-      width: calc(100% - 135px);
+      width: calc(100% - 137px);
     }
   }
 
@@ -454,8 +458,8 @@
   }
 
   .goal__item {
-    margin-top: 6px;
-    margin-bottom: 7px;
+    margin-top: 4px;
+    margin-bottom: 9px;
   }
 
   .goal__label {
@@ -480,10 +484,10 @@
 
   .goal {
     margin-top: 56px;
-    margin-bottom: 58px;
+    margin-bottom: 48px;
     margin-left: 40px;
     margin-right: 40px;
-    padding: 12px 28px;
+    padding: 19px 29px;
 
     border: 1px solid #cdcdcd;
   }
@@ -505,6 +509,16 @@
     &::after {
       left: calc(100% + 1px);
     }
+  }
+
+  .user-info__legend {
+    &::after {
+      top: 50%;
+    }
+  }
+
+  .user-info__label {
+    margin-right: 20px;
   }
 
   .user-info__wrapper {
@@ -593,13 +607,17 @@
   }
 
   .user-info {
-    margin-top: 25px;
+    margin-top: 28px;
   }
 
   .cat-data,
   .goal {
     width: calc(50% - 40px);
     margin: 0;
+  }
+
+  .cat-data__label {
+    margin-right: 20px;
   }
 
   .goal {

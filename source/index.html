@@ -2,8 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/owsaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="js/main-nav.js" as="script">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -52,8 +56,7 @@
           <picture class="stats__background-wrapper">
             <source media="(min-width: 1300px)" srcset="img/optimized/index-background-desktop@1x.jpg 1x, img/optimized/index-background-desktop@2x.jpg 2x">
 
-            <img src="img/optimized/index-background-mobile@1x.jpg"
-            srcset="img/optimized/index-background-mobile@2x.jpg 2x" alt="Фон с котом" class="stats__background">
+            <img src="img/optimized/index-background-mobile@1x.jpg" srcset="img/optimized/index-background-mobile@2x.jpg 2x" alt="Фон с котом" class="stats__background">
           </picture>
           <div class="stats__header h-container">
             <h1 class="stats__title">Функциональное питание для котов</h1>
@@ -199,7 +202,7 @@
           <div class="contacts__wrapper">
             <div class="contacts__inner">
               <div class="contacts__box">
-                <h3 class="contacts__title">приглашаем<br/> к сотрудничеству дилеров!</h3>
+                <h3 class="contacts__title">приглашаем<br> к сотрудничеству дилеров!</h3>
                 <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span class="contacts__space">Санкт-Петербург</span></p>
               </div>
             </div>
@@ -254,7 +257,7 @@
       </footer>
 
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-  <script src="js/map.js"></script>
+  <script src="js/map.js" async></script>
   <script src="js/main-nav.js"></script>
   </body>
 </html>
