@@ -82,6 +82,10 @@ body {
   }
 }
 
+.display-none {
+  display: none;
+}
+
 @import "base/normalize.scss";
 @import "base/fonts.scss";
 @import "blocks/page-header.scss";
