@@ -61,7 +61,7 @@
   }
 
   .catalog__item {
-    height: 431px;
+    min-height: 431px;
     width: calc(25% - 60px);
     margin-right: 60px;
     margin-top: 133px;
