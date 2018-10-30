@@ -21,6 +21,8 @@
 }
 
 .programm__list {
+  overflow: hidden;
+
   text-align: left;
   text-transform: uppercase;
   font-size: 16px;
@@ -249,18 +251,21 @@
   border: solid 1px #bababa;
 }
 
+.goal__input:focus + .goal__label::before,
+.add-some__input:focus + .add-some__label::before {
+  border: solid 1px #bababa;
+}
+
 .goal__label:active,
 .add-some__label:active {
   opacity: 0.3;
 }
 
-.goal__input:checked + .goal__label::before,
-.goal__label:active::before {
+.goal__input:checked + .goal__label::before {
   background-image: radial-gradient(#68b738 0, #68b738 6px, #ffffff 7px, #ffffff 100%);
 }
 
-.add-some__input:checked + .add-some__label::before,
-.add-some__label:active::before {
+.add-some__input:checked + .add-some__label::before {
   background-image: url("../img/optimized/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -320,21 +325,32 @@
 }
 
 .comment__textarea {
-  padding: 0;
+  padding-left: 14px;
+  padding-top: 14px;
   width: 100%;
   height: 150px;
   resize: none;
 
-  &::placeholder {
-    padding-left: 15px;
-    padding-top: 15px;
+  border: solid 1px rgba(205, 205, 205, 0.5);
 
+  &::placeholder {
     text-align: left;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 1.13;
     font-weight: 400;
     color: #444444;
+  }
+
+  &:hover {
+    border: 1px solid rgb(205, 205, 205);
+  }
+
+  &:focus {
+    padding-left: 13px;
+    padding-top: 13px;
+
+    border: solid 2px #444444;
   }
 }
 
@@ -470,8 +486,7 @@
     }
   }
 
-  .goal__input:checked + .goal__label::before,
-  .goal__label:active::before {
+  .goal__input:checked + .goal__label::before {
     background-image: radial-gradient(#68b738 0, #68b738 9px, #ffffff 10px, #ffffff 100%);
   }
 
@@ -538,16 +553,20 @@
   }
 
   .comment__textarea {
+    padding-left: 18px;
+    padding-top: 9px;
     margin-top: 47px;
     width: 631px;
     height: 174px;
 
     &::placeholder {
-      padding-left: 17px;
-      padding-top: 10px;
-
       font-size: 20px;
       line-height: 1.5;
+    }
+
+    &:focus {
+      padding-left: 17px;
+      padding-top: 8px;
     }
   }
 
@@ -639,11 +658,6 @@
 
   .comment__textarea {
     width: 1220px;
-
-    &::placeholder {
-      padding-left: 19px;
-      padding-top: 9px;
-    }
   }
 
   .programm__button-submit {

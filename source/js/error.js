@@ -2,18 +2,18 @@ if (window.NodeList && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = function (callback, thisArg) {
         thisArg = thisArg || window;
         for (var i = 0; i < this.length; i++) {
-            callback.call(thisArg, this[i], i, this);
+            callback.call(thisArg, this[i], i, this)
         }
     };
 }
 
-const forms = document.querySelectorAll('.programm__list')
+var forms = document.querySelectorAll('.programm__list')
 
-const validation = {
+var validation = {
   init(form) {
     this.valid = true
     this.form = form
-    const fieldsRequired = this.form.querySelectorAll('[required]')
+    var fieldsRequired = this.form.querySelectorAll('[required]')
 
     fieldsRequired.forEach((field) => {
       this.test(field)
@@ -22,8 +22,6 @@ const validation = {
     if (this.valid) {
       // this.ajaxSend()
     }
-
-    console.log(this.valid);
 
   },
   fieldSuccess(field) {
@@ -35,7 +33,7 @@ const validation = {
     this.valid = false
   },
   test(field) {
-    const typeField = field.getAttribute('type')
+    var typeField = field.getAttribute('type')
     switch (typeField) {
       case 'email':
         this.testEmail(field)
@@ -55,7 +53,7 @@ const validation = {
     }
   },
   testEmail(field) {
-    const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9])+$/
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9])+$/
     if (!filter.test(field.value)) {
       this.fieldError(field)
     } else {
@@ -90,11 +88,11 @@ function formSubmit(form) {
     validation.init(form)
   })
 
-  const button = form.querySelector('.programm__button-submit')
+  var button = form.querySelector('.programm__button-submit')
   if (button !== null) {
     button.addEventListener('click', (event) => {
       event.preventDefault()
-      const domEvent = document.createEvent('Event')
+      var domEvent = document.createEvent('Event')
       domEvent.initEvent('submit', false, true)
       event.target.closest('form').dispatchEvent(domEvent)
     })
